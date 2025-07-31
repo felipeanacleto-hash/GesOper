@@ -78,6 +78,26 @@ class NavigationSystem {
         }
       }
     });
+    
+    // Garantir que o submenu financeiro seja visível quando necessário
+    const financialPages = [
+      'conciliacao-bancaria',
+      'lancamento-de-caixa', 
+      'base-de-faturamento'
+    ];
+    
+    const isFinancialPage = financialPages.some(page => currentPath.includes(page));
+    if (isFinancialPage) {
+      const financialSubmenu = document.getElementById('submenu-financeiro');
+      const financialButton = document.querySelector('[data-submenu="submenu-financeiro"]');
+      
+      if (financialSubmenu && financialButton) {
+        financialSubmenu.classList.add('show');
+        financialButton.classList.add('active');
+        const arrow = financialButton.querySelector('.arrow');
+        if (arrow) arrow.classList.add('rotated');
+      }
+    }
   }
 
   setupSmoothScrolling() {

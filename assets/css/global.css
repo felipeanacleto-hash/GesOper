@@ -142,6 +142,13 @@ body {
   max-height: 200px;
 }
 
+/* Garantir que todos os links do submenu sejam visíveis */
+.submenu a {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
 .submenu a {
   display: block;
   color: rgba(255, 255, 255, 0.8);
