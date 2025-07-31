@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conciliação Bancária - GesOper</title>
+  <link rel="stylesheet" href="../../assets/css/global.css">
+</head>
+
+<body>
+  <div class="main-wrapper">
+    <nav class="sidebar">
+      <div class="sidebar-header">
+        <h2><a href="../../index.html">GesOper</a></h2>
+        <div class="subtitle">Base de Conhecimento</div>
+      </div>
+
+      <div class="menu-item">
+        <button class="menu-button" data-submenu="submenu-operacional">
+          <span><span class="icon">⚙️</span>Operacional</span>
+          <span class="arrow">▶</span>
+        </button>
+        <div id="submenu-operacional" class="submenu">
+          <a href="../../operacional/escala/index.html">📅 Escala</a>
+          <a href="../../operacional/cadastro-jornada/index.html">⏰ Cadastro de Jornada</a>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <button class="menu-button active" data-submenu="submenu-financeiro">
+          <span><span class="icon">💰</span>Financeiro</span>
+          <span class="arrow rotated">▶</span>
+        </button>
+        <div id="submenu-financeiro" class="submenu show">
+          <a href="../index.html">📊 Visão Geral</a>
+          <a href="index.html" class="active">🏦 Conciliação Bancária</a>
+          <a href="../lancamento-de-caixa/index.html">💰 Lançamento de Caixa</a>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <button class="menu-button">
+          <a href="../../beneficios/index.html"
+            style="color: inherit; text-decoration: none; display: flex; align-items: center; width: 100%;">
+            <span class="icon">🎁</span>Benefícios
+          </a>
+        </button>
+      </div>
+    </nav>
+
+    <main class="content">
+      <div class="topbar">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+        <h1>Conciliação Bancária</h1>
+        <img src="../../assets/img/GesoperFinanceiro.png" alt="Logo Financeiro" style="height: 80px; margin-right: 10px;">
+        </div>
+        <div class="breadcrumb">
+          <a href="../../index.html">Início</a> >
+          <a href="../index.html">Financeiro</a> >
+          Conciliação Bancária
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h2>🏦 Tesouraria - Conciliação Bancária</h2>
+        <p>Pode ser acessado pelo seguinte caminho: <b>Gesoper>>Financeiro>>Tesouraria>>Conciliação Bancária</b></p>
+        <img src="conciliacao_bancaria.png" alt="Tela de Conciliação Bancária"
+          style="max-width: 100%; height: auto; display: block; margin: 1rem 0;">
+        
+        <h3>Visão Geral do Projeto</h3>
+        <p style="text-align: justify;">
+          Toda vez que uma conta banco é movimentada através do fluxo de caixa, ela mantém um registro dentro do módulo
+          administrativo para posterior validação junto ao arquivo de extrato (OFX) gerado a partir do banco, esse
+          processo de validação de lançamentos chamamos de conciliação bancária.<br><br>Para acessar o programa de conciliação
+          bancária, abra o menu <b>Tesouraria</b> e em seguida <b>Conciliação Bancária</b>.
+          <br><br>Inicialmente, para realizarmos a conciliação bancária, dependemos de um arquivo de conciliação bancária, este
+          arquivo deve ser obtido através do site do banco, normalmente, o processo financeiro de conciliação bancária
+          sempre é realizado sob o dia anterior ou sob a semana anterior. <br><br>Este sistema foi desenvolvido especificamente
+          para atender às necessidades de conciliação bancária automatizada.
+        </p>
+
+        <ul class="feature-list">
+          <li class="feature-item">
+            <strong>Processamento Automatizado</strong>
+            <small>Sistema processa os extratos bancários e identifica correspondências com lançamentos
+              internos.</small>
+          </li>
+          <li class="feature-item">
+            <b>Relatórios Gerenciais</b>
+            <small>Relatórios detalhados para acompanhamento do processo e tomada de decisões estratégicas.</small>
+          </li>
+          <li class="feature-item">
+            <strong>Formatos Suportados</strong>
+            <small>O sistema suporta importação de extratos no formato <b>OFX (Open Financial
+                Exchange)</b>Formato padrão para intercâmbio de dados financeiros.</small>
+          </li>
+        </ul>
+      </div>
+
+      <div class="content-card">
+        <h2>Fluxo de Processamento</h2>
+
+        <div style="display: flex; flex-direction: column; gap: 1rem; margin: 1.5rem 0;">
+          <div
+            style="display: flex; align-items: center; padding: 1rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #003973;">
+            <div>
+              <strong>Importação de Extratos</strong>
+              <p style="margin: 0.25rem 0 0; font-size: 0.9rem; color: #666; text-align: justify;"> O primeiro
+                passo é definir a data, nos campos <strong>Data inicial</strong> e <strong>Data final</strong> em que
+                iremos realizar a conciliação, obter junto ao banco o arquivo OFX dentro do período onde iremos realizar
+                a conciliação bancária, clicar no botão <strong>Importar OFX</strong> e depois clicar no botão
+                <strong>Pesquisar</strong>.
+              </p>
+            </div>
+          </div>
+
+          <div
+            style="display: flex; align-items: center; padding: 1rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #28a745;">
+            <div>
+              <b>Validação e Visualização - Lado Esquerdo Extrato Bancário</b>
+              <p style="font-size: 0.9rem; color: #666; text-align: justify;">No lado esquerdo, Extrato
+                Bancário é exibido as informações das operações que foram importadas via arquivo OFX e no lado direito,
+                Gesoper ADM os lançamentos realizados no fluxo de caixa para a conta selecionada para poder conciliar.
+                <br><br>No lado esquerdo ainda, é possível selecionar todos ou alguns registros e se for preciso, excluir estes
+                lançamentos, através do botão <b>Excluir Lançamento</b> para poder por exemplo, importar
+                novamente o arquivo ofx. <br><br>Existe também a possibilidade, de lançar um estorno através do botão
+                <b>Estornar Selecionados</b> e desfazer este lançamento, botão <b>Desfazer
+                  Estorno</b> estas duas opções são usadas em casos específicos, onde o banco lança algum registro
+                indevido e não faz automaticamente o lançamento deste estorno no extrato bancário. <br><br>Existe ainda na tela,
+                alguns campos de filtro que podem ser usados, <b>Ocultar Conciliados</b>, caso marcado, não
+                mostra em tela os registros que já foram conciliados para poder agilizar o processo da conciliação. <br><br>O
+                campo <b>Tipo</b>, pode ser usado para que o sistema filtre determinadas operações,
+                <b>Débito</b>, <b>Crédito</b> e <b>Todos</b>, conforme a opção
+                selecionada, será mostrada os registros nos dois lados, <b>Extrato Bancário</b> e
+                <b>Gesoper ADM</b> para que possa ser visualizado e realizado a conferência das informações na
+                tela. <br><br>O campo <b>Valor</b>, permite que seja filtrado somente um valor específico que o
+                usuário precisando visualizar em tela.
+              </p>
+            </div>
+          </div>
+
+          <div
+            style="display: flex; align-items: center; padding: 1rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #dc3545;">
+            <div>
+              <strong>Validação e Visualização - Lado Direito Gesoper ADM</strong>
+              <p style="margin: 0.25rem 0 0; font-size: 0.9rem; color: #666; text-align: justify;">No lado direito,
+                “Gesoper ADM”, é possível
+                fazer várias ações, que afetam diretamente no processo de conciliação. <br><br>O botão “Marcar Iguais” serve
+                para marcar somente os registros que possuem informações idênticas, como valor e data, esta marcação é
+                feita nas duas telas e deve ser usada somente quando tiver as informações nos dois lados da tela. <br><br>Após
+                realizar a ação de marcação dos registros iguais, pode ser usado o botão <b>Conciliar Selecinados</b> para
+                poder efetivar a conciliação destes registros selecionados. <br><br>O botão <b>Ajustar Conciliação</b> permite que
+                você corrija erros de centavos, ou seja, pequenos valores para efetivar a conciliação, por exemplo, você
+                lança uma conta a receber de 11.500,49 e o banco lhe credita 11.500,48; nestes casos, usamos o botão<b>
+                Ajustar conciliação</b>. <br><br>O botão <b>Marcar Conciliados</b> e o <b>Desmarcar Conciliados</b> respectivamente, marca e
+                desmarca, na tela todos os registros que foram conciliados, para que possa agilizar o processo de gestão
+                das infomações mostradas. <br><br>O botão <b>Detalhar</b> faz com que o sistema, mostre em detalhes o lançamento que
+                foi feito no Lançamento de Caixa, conforme lançamento que foi selecionado para executar este ação. <br><br>O
+                botão <b>Gerar Lançamento</b> é utilizado quando temos o débito no banco e não temos o lançamento do mesmo
+                nas contas a pagar, isso é muito comum de ocorrer nas tarifas bancárias e outros débitos de baixo valor
+                originados pelo banco, como, por exemplo, juros de saldo negativo/positivo, lançamento de tarifas
+                bancárias, extrato, mensalidade de conta, resgate de aplicação. <br><br>Nesses casos, utilizamos o botão <b>Gerar
+                Lançamento</b>b para realizar um movimento de caixa e contabilizar esse valor na sua respectiva conta.</p>
+            </div>
+          </div>
+
+          <div
+            style="display: flex; align-items: center; padding: 1rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #6f42c1;">
+            <div>
+              <strong>Geração de Relatórios</strong>
+              <p style="margin: 0.25rem 0 0; font-size: 0.9rem; color: #666; text-align: justify;">Para gerar o
+                relatório para conferência é o botão <b>Listar</b>b>, nele o sistema gera uma relatório para que possa ser analisado os registro que foram
+                conciliados ou não, depenendo do filtro que for usado, Tudo, Não Conciliados ou Conciliados.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3>Tratamento de Divergências</h3>
+      <p>O sistema categoriza e trata diferentes tipos de divergências:</p>
+
+      <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+        <li><b>Diferenças de Valor:</b> Transações com valores divergentes</li>
+        <li><b>Diferenças de Data:</b> Lançamentos com datas diferentes entre banco e o lançamento de caixa
+          efetuado</li>
+        <li><b>Lançamentos Órfãos:</b> Movimentações sem correspondência no sistema oposto</li>
+        <li><b>Duplicações:</b> Identificação e tratamento de lançamentos duplicados</li>
+        <li><b>Estornos:</b> Reconhecimento de estornos e suas contrapartidas</li>
+      </ul>
+
+      <div class="content-card">
+        <h2>Benefícios Operacionais</h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-top: 1rem;">
+          <div style="background-color: #f8f9fa; padding: 1rem; border-radius: 8px; border-left: 4px solid #003973;">
+            <h4 style="color: #003973; margin-bottom: 0.5rem;">⚡ Redução de Tempo</h4>
+            <p style="font-size: 0.9rem; margin: 0;">Automatização e redução do tempo de conciliação de dias para horas.</p>
+          </div>
+          
+          <div style="background-color: #f8f9fa; padding: 1rem; border-radius: 8px; border-left: 4px solid #28a745;">
+            <h4 style="color: #28a745; margin-bottom: 0.5rem;">🎯 Maior Precisão</h4>
+            <p style="font-size: 0.9rem; margin: 0;">Eliminação de erros humanos através de processos automatizados e mais ágeis.</p>
+          </div>
+          
+          <div style="background-color: #f8f9fa; padding: 1rem; border-radius: 8px; border-left: 4px solid #ffc107;">
+            <h4 style="color: #ffc107; margin-bottom: 0.5rem;">📊 Controle Total</h4>
+            <p style="font-size: 0.9rem; margin: 0;">Visibilidade completa sobre todas as movimentações financeiras.</p>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <footer style="text-align: center; padding: 1.5rem 1rem; background-color: #f8f9fa; border-top: 1px solid #ccc;">
+  <img src="../../LogoSolucao.png" alt="Logo Solução" style="height: 50px; margin-bottom: 0.5rem;">
+  <p style="margin: 0;">&copy; 2025 GesOper - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="../../assets/js/navigation.js"></script>
+</body>
+
+</html>

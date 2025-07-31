@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lançamento de Caixa - GesOper</title>
+    <link rel="stylesheet" href="../../assets/css/global.css">
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h2><a href="../../index.html">GesOper</a></h2>
+                <div class="subtitle">Base de Conhecimento</div>
+            </div>
+
+            <div class="menu-item">
+                <button class="menu-button" data-submenu="submenu-operacional">
+                    <span><span class="icon">⚙️</span>Operacional</span>
+                    <span class="arrow">▶</span>
+                </button>
+                <div id="submenu-operacional" class="submenu">
+                    <a href="../../operacional/escala/index.html">📅 Escala</a>
+                    <a href="../../operacional/cadastro-jornada/index.html">⏰ Cadastro de Jornada</a>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <button class="menu-button active" data-submenu="submenu-financeiro">
+                    <span><span class="icon">💰</span>Financeiro</span>
+                    <span class="arrow rotated">▶</span>
+                </button>
+                <div id="submenu-financeiro" class="submenu show">
+                    <a href="../index.html">📊 Visão Geral</a>
+                    <a href="../conciliacao-bancaria/index.html">🏦 Conciliação Bancária</a>
+                    <a href="index.html" class="active">📥 Lançamento de Caixa</a>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <button class="menu-button">
+                    <a href="../../beneficios/index.html"
+                        style="color: inherit; text-decoration: none; display: flex; align-items: center; width: 100%;">
+                        <span class="icon">🎁</span>Benefícios
+                    </a>
+                </button>
+            </div>
+        </nav>
+
+        <main class="content">
+            <div class="topbar">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <h1>Lançamento de Caixa</h1>
+                    <img src="../../assets/img/GesoperFinanceiro.png" alt="Logo Financeiro"
+                        style="height: 80px; margin-right: 10px;">
+                </div>
+                <div class="breadcrumb">
+                    <a href="../../index.html">Início</a> >
+                    <a href="../index.html">Financeiro</a> >
+                    Lançamento de Caixa
+                </div>
+            </div>
+
+            <div class="content-card">
+                <h2>📥 Tesouraria - Lançamento de Caixa</h2>
+                <p>Pode ser acessado pelo seguinte caminho: <b>Gesoper >> Financeiro >> Tesouraria >> Lançamento de Caixa</b></p>
+                <img src="../../assets/img/lancamento_de_caixa.png" alt="Tela de Lançamento de Caixa"
+                    style="max-width: 100%; height: auto; display: block; margin: 1rem 0; border: 1px solid #ccc;">
+
+                <h3>Visão Geral do Processo</h3>
+                <p style="text-align: justify;">
+                    O módulo de Lançamento de Caixa permite registrar movimentações financeiras, como pagamentos, recebimentos, saques, depósitos, transferências e ajustes de saldo, de forma organizada e integrada ao sistema financeiro do GesOper. Ele suporta operações individuais ou em lote, garantindo maior controle e precisão nas transações financeiras da empresa.
+                </p>
+
+                <p style="text-align: justify;">
+                    <strong>Flexibilidade de Operações:</strong> Suporta diversos tipos de movimentações, como despesas, receitas, transferências e ajustes.<br>
+                    <strong>Integração com Contas:</strong> Conexão direta com contas a pagar/receber e plano de contas para maior rastreabilidade.<br>
+                    <strong>Automatização:</strong> Campos como usuário e data de digitação são preenchidos automaticamente, reduzindo erros.
+                </p>
+            </div>
+
+            <div class="content-card">
+                <h2>Fluxo de Processamento</h2>
+
+                <div style="display: flex; flex-direction: column; gap: 1rem; margin: 1.5rem 0;">
+                    <div style="display: flex; align-items: center; padding: 1rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #003973;">
+                        <div>
+                            <strong>Início do Lançamento</strong>
+                            <p style="margin: 0.25rem 0 0; font-size: 0.9rem; color: #666; text-align: justify;">
+                                Selecione a <strong>Filial</strong> onde será realizado o lançamento. Deixe o campo <strong>Número do Lançamento</strong> como “0” e pressione <strong>TAB</strong>. Preencha: <strong>Data da Operação/Baixa</strong> (use F2 para inserir a data atual); <strong>Usuário</strong> e <strong>Data da Digitação</strong> são preenchidos automaticamente; <strong>Nº Documento</strong> e <strong>Série</strong> são opcionais, para cupom ou TED; <strong>Forma de Pagamento</strong> deve ser escolhida adequadamente, usada como filtro em relatórios; <strong>Tipo de Movimento</strong> pode ser Individual ou Lote.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; align-items: center; padding: 1rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #28a745;">
+                        <div>
+                            <strong>Origem e Destino</strong>
+                            <p style="margin: 0.25rem 0 0; font-size: 0.9rem; color: #666; text-align: justify;">
+                                A conta <strong>Origem</strong> representa a saída/débito, enquanto a conta <strong>Destino</strong> representa a entrada/crédito. Exemplos: Para <strong>Pagamento</strong>, Origem é Banco/Caixa e Destino é Despesa/Passivo; para <strong>Recebimento</strong>, Origem é Cliente/Ativo e Destino é Caixa/Banco.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; align-items: center; padding: 1rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #dc3545;">
+                        <div>
+                            <strong>Campos Adicionais</strong>
+                            <p style="margin: 0.25rem 0 0; font-size: 0.9rem; color: #666; text-align: justify;">
+                                Complete os campos adicionais para maior detalhamento: <strong>Centro de Custo</strong> pode ser preenchido manualmente ou herdado de lançamentos anteriores; <strong>Valor do Lançamento</strong> é o valor a ser quitado; <strong>Número do Cheque</strong> é habilitado apenas para forma de pagamento “Cheque”; <strong>Histórico Padrão</strong> é uma descrição breve, cadastrável via Tabelas de Apoio; <strong>Cliente/Fornecedor</strong> e <strong>Histórico</strong> adicionam mais detalhes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <h2>Tipos de Operações</h2>
+
+                <div style="display: flex; flex-direction: column; gap: 1rem; margin: 1.5rem 0;">
+                    <div style="display: flex; align-items: center; padding: 1rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #003973;">
+                        <div>
+                            <strong>1. Sem Título no Contas a Pagar/Receber</strong>
+                            <p style="margin: 0.25rem 0 0; font-size: 0.9rem; color: #666; text-align: justify;">
+                                <strong>Op. 1 – Despesas à Vista</strong>: Origem: Caixa/Banco | Destino: Despesas Diversas.<br>
+                                <strong>Op. 3 – Receitas à Vista</strong>: Origem: Receitas Diversas | Destino: Caixa/Banco.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; align-items: center; padding: 1rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #28a745;">
+                        <div>
+                            <strong>2. Com Título no Contas a Pagar/Receber</strong>
+                            <p style="margin: 0.25rem 0 0; font-size: 0.9rem; color: #666; text-align: justify;">
+                                <strong>Op. 5 – Pagamentos</strong>: Origem: Caixa/Banco | Destino: Despesas Diversas.<br>
+                                <strong>Op. 6 – Recebimentos</strong>: Origem: Receitas Diversas | Destino: Caixa/Banco.<br>
+                                Inclui consulta de títulos com filtros, legenda por cores (vermelho = vencido), suporte a pagamento parcial, juros, multa e histórico automático. Pagamentos parciais geram novo lançamento para o saldo restante.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; align-items: center; padding: 1rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #dc3545;">
+                        <div>
+                            <strong>3. Movimento em Lote</strong>
+                            <p style="margin: 0.25rem 0 0; font-size: 0.9rem; color: #666; text-align: justify;">
+                                Permite quitar vários títulos simultaneamente com seleção em massa. Suporta manutenção de baixa para cada título, utilizando códigos de operação 5 ou 6.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; align-items: center; padding: 1rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #6f42c1;">
+                        <div>
+                            <strong>4. Saque e Depósito</strong>
+                            <p style="margin: 0.25rem 0 0; font-size: 0.9rem; color: #666; text-align: justify;">
+                                <strong>Op. 7 – Saque</strong>: Origem: Banco | Destino: Caixa.<br>
+                                <strong>Op. 8 – Depósito</strong>: Origem: Caixa | Destino: Banco.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; align-items: center; padding: 1rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #ffc107;">
+                        <div>
+                            <strong>5. Transferência entre Contas</strong>
+                            <p style="margin: 0.25rem 0 0; font-size: 0.9rem; color: #666; text-align: justify;">
+                                <strong>Op. 10 – Transferência entre Filiais</strong>: Requer cadastro de conta empréstimos no plano de contas. Passos: (1) Origem: Banco | Destino: Conta Empréstimos; (2) Origem: Conta Empréstimos | Destino: Banco.<br>
+                                <strong>Op. 11 – Transferência Interna</strong>: Origem: Banco | Destino: Banco (mesma filial).
+                            </p>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; align-items: center; padding: 1rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #17a2b8;">
+                        <div>
+                            <strong>6. Ajuste de Saldo</strong>
+                            <p style="margin: 0.25rem 0 0; font-size: 0.9rem; color: #666; text-align: justify;">
+                                <strong>Op. 50 – Ajuste</strong>: Registra entrada ou saída direta em uma conta, preenchendo apenas <strong>Origem</strong> (saída) ou <strong>Destino</strong> (entrada).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <h2>Benefícios Operacionais</h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-top: 1rem;">
+                    <div style="background-color: #f8f9fa; padding: 1rem; border-radius: 8px; border-left: 4px solid #003973;">
+                        <h4 style="color: #003973; margin-bottom: 0.5rem;">⚡ Agilidade</h4>
+                        <p style="font-size: 0.9rem; margin: 0;">Reduz o tempo de registro de movimentações com preenchimento automático e processos em lote.</p>
+                    </div>
+                    
+                    <div style="background-color: #f8f9fa; padding: 1rem; border-radius: 8px; border-left: 4px solid #28a745;">
+                        <h4 style="color: #28a745; margin-bottom: 0.5rem;">🎯 Precisão</h4>
+                        <p style="font-size: 0.9rem; margin: 0;">Minimiza erros com validações automáticas e integração com contas a pagar/receber.</p>
+                    </div>
+                    
+                    <div style="background-color: #f8f9fa; padding: 1rem; border-radius: 8px; border-left: 4px solid #ffc107;">
+                        <h4 style="color: #ffc107; margin-bottom: 0.5rem;">📊 Controle</h4>
+                        <p style="font-size: 0.9rem; margin: 0;">Visibilidade total das movimentações financeiras, com relatórios e filtros detalhados.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer style="text-align: center; padding: 1.5rem 1rem; background-color: #f8f9fa; border-top: 1px solid #ccc;">
+        <img src="../../LogoSolucao.png" alt="Logo Solução" style="height: 50px; margin-bottom: 0.5rem;">
+        <p style="margin: 0;">&copy; 2025 GesOper - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="../../assets/js/navigation.js"></script>
+</body>
+
+</html>

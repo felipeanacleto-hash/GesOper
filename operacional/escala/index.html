@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escala - GesOper</title>
+  <link rel="stylesheet" href="../../assets/css/global.css">
+</head>
+<body>
+  <div class="main-wrapper">
+    <nav class="sidebar">
+      <div class="sidebar-header">
+        <h2><a href="../../index.html">GesOper</a></h2>
+        <div class="subtitle">Base de Conhecimento</div>
+      </div>
+      
+      <div class="menu-item">
+        <button class="menu-button" data-submenu="submenu-operacional">
+          <span><span class="icon">⚙️</span>Operacional</span>
+          <span class="arrow">▶</span>
+        </button>
+        <div id="submenu-operacional" class="submenu show">
+          <a href="../escala/index.html" class="active">📅 Escala</a>
+          <a href="../cadastro-jornada/index.html">⏰ Cadastro de Jornada</a>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <button class="menu-button" data-submenu="submenu-financeiro">
+          <span><span class="icon">💰</span>Financeiro</span>
+          <span class="arrow">▶</span>
+        </button>
+        <div id="submenu-financeiro" class="submenu">
+          <a href="../../financeiro/index.html">📊 Visão Geral</a>
+          <a href="../../financeiro/conciliacao-bancaria/index.html">🏦 Conciliação Bancária</a>
+          <a href="../../financeiro/lancamento-de-caixa/index.html">💰 Lançamento de Caixa</a>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <button class="menu-button">
+          <a href="../../beneficios/index.html" style="color: inherit; text-decoration: none; display: flex; align-items: center; width: 100%;">
+            <span class="icon">🎁</span>Benefícios
+          </a>
+        </button>
+      </div>
+    </nav>
+
+    <main class="content">
+      <div class="topbar">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+        <h1>Gestão de Escala</h1>
+        <img src="../../assets/img/GesoperOperacional.png" alt="Logo Operacional" style="height: 80px; margin-right: 10px;">
+       </div>    
+        <div class="breadcrumb">
+          <a href="../../index.html">Início</a> > 
+          <a href="#" onclick="Utils.toggleSubmenu('submenu-operacional')">Operacional</a> >
+          Escala
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h2>📅 Módulo de Escala</h2>
+        <p>O módulo de escala do GesOper permite o gerenciamento completo dos horários de trabalho dos colaboradores, oferecendo flexibilidade e controle total sobre a organização das equipes.</p>
+        
+        <h3>Principais Funcionalidades</h3>
+        <ul class="feature-list">
+          <li class="feature-item">
+            <strong>Criação de Escalas Personalizadas</strong>
+            <small>Crie escalas de trabalho adaptadas às necessidades específicas de cada setor ou equipe, com diferentes turnos e horários.</small>
+          </li>
+          <li class="feature-item">
+            <strong>Gestão de Turnos</strong>
+            <small>Configure turnos matutinos, vespertinos, noturnos e plantões especiais com horários flexíveis e regras específicas.</small>
+          </li>
+          <li class="feature-item">
+            <strong>Alocação de Colaboradores</strong>
+            <small>Distribua colaboradores nos diferentes turnos considerando competências, disponibilidade e preferências.</small>
+          </li>
+          <li class="feature-item">
+            <strong>Controle de Substituições</strong>
+            <small>Gerencie substituições automáticas e manuais em casos de ausências, férias ou afastamentos.</small>
+          </li>
+          <li class="feature-item">
+            <strong>Relatórios de Escala</strong>
+            <small>Gere relatórios detalhados sobre distribuição de horários, horas trabalhadas e produtividade das equipes.</small>
+          </li>
+        </ul>
+      </div>
+
+      <div class="content-card">
+        <h2>Como Utilizar</h2>
+        <h3>1. Configuração Inicial</h3>
+        <p>Antes de criar escalas, configure os parâmetros básicos:</p>
+        <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+          <li>Defina os horários de funcionamento da empresa</li>
+          <li>Configure os tipos de turno disponíveis</li>
+          <li>Estabeleça as regras de trabalho (carga horária, intervalos, etc.)</li>
+        </ul>
+
+        <h3>2. Criação de Escalas</h3>
+        <p>Para criar uma nova escala:</p>
+        <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+          <li>Acesse o menu "Nova Escala"</li>
+          <li>Selecione o período (semanal, quinzenal ou mensal)</li>
+          <li>Escolha os colaboradores que farão parte da escala</li>
+          <li>Distribua os turnos conforme a necessidade</li>
+          <li>Revise e publique a escala</li>
+        </ul>
+
+        <h3>3. Monitoramento</h3>
+        <p>Acompanhe o desempenho da escala através de:</p>
+        <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+          <li>Dashboard com visão geral dos turnos</li>
+          <li>Alertas de conflitos ou problemas na escala</li>
+          <li>Relatórios de cumprimento de horários</li>
+          <li>Análise de produtividade por turno</li>
+        </ul>
+      </div>
+
+      <div class="content-card">
+        <h2>Dicas e Boas Práticas</h2>
+        <ul style="padding-left: 1.5rem;">
+          <li><strong>Planejamento Antecipado:</strong> Crie escalas com pelo menos uma semana de antecedência</li>
+          <li><strong>Rotatividade:</strong> Alterne colaboradores entre diferentes turnos para evitar sobrecarga</li>
+          <li><strong>Backup:</strong> Sempre tenha colaboradores de reserva para cobrir ausências imprevistas</li>
+          <li><strong>Comunicação:</strong> Mantenha todos informados sobre mudanças na escala</li>
+          <li><strong>Análise:</strong> Revise regularmente os relatórios para otimizar a distribuição de turnos</li>
+        </ul>
+      </div>
+    </main>
+  </div>
+
+  <footer style="text-align: center; padding: 1.5rem 1rem; background-color: #f8f9fa; border-top: 1px solid #ccc;">
+  <img src="../../LogoSolucao.png" alt="Logo Solução" style="height: 50px; margin-bottom: 0.5rem;">
+  <p style="margin: 0;">&copy; 2025 GesOper - Todos os direitos reservados</p>
+</footer>
+
+  <script src="../../assets/js/navigation.js"></script>
+</body>
+</html>

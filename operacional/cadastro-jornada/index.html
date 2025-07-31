@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Jornada - GesOper</title>
+  <link rel="stylesheet" href="../../assets/css/global.css">
+</head>
+<body>
+  <div class="main-wrapper">
+    <nav class="sidebar">
+      <div class="sidebar-header">
+        <h2><a href="../../index.html">GesOper</a></h2>
+        <div class="subtitle">Base de Conhecimento</div>
+      </div>
+      
+      <div class="menu-item">
+        <button class="menu-button active" data-submenu="submenu-operacional">
+          <span><span class="icon">⚙️</span>Operacional</span>
+          <span class="arrow rotated">▶</span>
+        </button>
+        <div id="submenu-operacional" class="submenu show">
+          <a href="../escala/index.html">📅 Escala</a>
+          <a href="../cadastro-jornada/index.html" class="active">⏰ Cadastro de Jornada</a>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <button class="menu-button" data-submenu="submenu-financeiro">
+          <span><span class="icon">💰</span>Financeiro</span>
+          <span class="arrow">▶</span>
+        </button>
+        <div id="submenu-financeiro" class="submenu">
+          <a href="../../financeiro/index.html">📊 Visão Geral</a>
+          <a href="../../financeiro/conciliacao-bancaria/index.html">🏦 Conciliação Bancária</a>
+          <a href="../../financeiro/lancamento-de-caixa/index.html">💰 Lançamento de Caixa</a>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <button class="menu-button">
+          <a href="../../beneficios/index.html" style="color: inherit; text-decoration: none; display: flex; align-items: center; width: 100%;">
+            <span class="icon">🎁</span>Benefícios
+          </a>
+        </button>
+      </div>
+    </nav>
+
+    <main class="content">
+      <div class="topbar">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+        <h1>Cadastro de Jornada</h1>
+        <img src="../../assets/img/GesoperOperacional.png" alt="Logo Operacional" style="height: 80px; margin-right: 10px;">
+       </div>  
+        <div class="breadcrumb">
+          <a href="../../index.html">Início</a> > 
+          <a href="#" onclick="Utils.toggleSubmenu('submenu-operacional')">Operacional</a> > 
+          Cadastro de Jornada
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h2>⏰ Cadastro de Jornada de Trabalho</h2>
+        <p>O módulo de cadastro de jornada permite definir e gerenciar os diferentes tipos de jornada de trabalho utilizados na empresa, garantindo conformidade com a legislação trabalhista e otimizando a gestão de horários.</p>
+        
+        <h3>Principais Funcionalidades</h3>
+        <ul class="feature-list">
+          <li class="feature-item">
+            <strong>Tipos de Jornada</strong>
+            <small>Configure diferentes tipos de jornada: 8h diárias, 6x1, 12x36, meio período, jornada flexível e outras modalidades conforme a necessidade.</small>
+          </li>
+          <li class="feature-item">
+            <strong>Horários Personalizados</strong>
+            <small>Defina horários de entrada, saída, intervalos e tolerâncias específicas para cada tipo de jornada.</small>
+          </li>
+          <li class="feature-item">
+            <strong>Regras de Negócio</strong>
+            <small>Configure regras automáticas para cálculo de horas extras, adicional noturno, DSR e outros benefícios trabalhistas.</small>
+          </li>
+          <li class="feature-item">
+            <strong>Controle de Intervalos</strong>
+            <small>Gerencie intervalos obrigatórios, pausas para refeição e descansos conforme a legislação vigente.</small>
+          </li>
+          <li class="feature-item">
+            <strong>Validação Automática</strong>
+            <small>Sistema de validação que verifica a conformidade das jornadas com as normas trabalhistas brasileiras.</small>
+          </li>
+        </ul>
+      </div>
+
+      <div class="content-card">
+        <h2>Configuração de Jornadas</h2>
+        
+        <h3>1. Jornada Padrão (8h diárias)</h3>
+        <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+          <li><strong>Carga Horária:</strong> 44 horas semanais</li>
+          <li><strong>Horário:</strong> 08:00 às 17:00 (1h de almoço)</li>
+          <li><strong>Tolerância:</strong> 10 minutos de entrada/saída</li>
+          <li><strong>Intervalo:</strong> 1 hora obrigatória após 6h trabalhadas</li>
+        </ul>
+
+        <h3>2. Jornada 12x36</h3>
+        <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+          <li><strong>Carga Horária:</strong> 12 horas trabalhadas, 36 horas de descanso</li>
+          <li><strong>Intervalos:</strong> 1 hora para refeição durante o plantão</li>
+          <li><strong>Aplicação:</strong> Ideal para segurança, saúde e operações contínuas</li>
+          <li><strong>Compensação:</strong> Não gera horas extras por acordo coletivo</li>
+        </ul>
+
+        <h3>3. Jornada Flexível</h3>
+        <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+          <li><strong>Horário Core:</strong> 10:00 às 15:00 (presença obrigatória)</li>
+          <li><strong>Flexibilidade:</strong> Entrada entre 07:00 e 10:00</li>
+          <li><strong>Saída:</strong> Ajustada conforme horário de entrada</li>
+          <li><strong>Banco de Horas:</strong> Controle automático de saldo</li>
+        </ul>
+      </div>
+
+      <div class="content-card">
+        <h2>Como Cadastrar uma Nova Jornada</h2>
+        
+        <h3>Passo a Passo:</h3>
+        <ol style="margin: 1rem 0; padding-left: 1.5rem;">
+          <li><strong>Acesse o Menu:</strong> Vá em Operacional > Cadastro de Jornada</li>
+          <li><strong>Nova Jornada:</strong> Clique em "Adicionar Nova Jornada"</li>
+          <li><strong>Informações Básicas:</strong>
+            <ul style="margin: 0.5rem 0; padding-left: 1rem;">
+              <li>Nome da jornada</li>
+              <li>Descrição detalhada</li>
+              <li>Tipo de jornada (fixa, flexível, escala)</li>
+            </ul>
+          </li>
+          <li><strong>Configurar Horários:</strong>
+            <ul style="margin: 0.5rem 0; padding-left: 1rem;">
+              <li>Horário de entrada</li>
+              <li>Horário de saída</li>
+              <li>Intervalos obrigatórios</li>
+              <li>Tolerâncias permitidas</li>
+            </ul>
+          </li>
+          <li><strong>Regras Especiais:</strong>
+            <ul style="margin: 0.5rem 0; padding-left: 1rem;">
+              <li>Cálculo de horas extras</li>
+              <li>Adicional noturno</li>
+              <li>Regras de banco de horas</li>
+            </ul>
+          </li>
+          <li><strong>Validar e Salvar:</strong> Revise todas as configurações e salve</li>
+        </ol>
+      </div>
+
+      <div class="content-card">
+        <h2>Conformidade Legal</h2>
+        <p>O sistema garante conformidade com:</p>
+        <ul style="margin: 1rem 0; padding-left: 1.5rem;">
+          <li><strong>CLT:</strong> Consolidação das Leis do Trabalho</li>
+          <li><strong>Portaria 671/2021:</strong> Registro eletrônico de ponto</li>
+          <li><strong>Lei 13.467/2017:</strong> Reforma trabalhista</li>
+          <li><strong>Convenções Coletivas:</strong> Acordos específicos por categoria</li>
+        </ul>
+
+        <div style="background-color: #f0f8ff; padding: 1rem; border-radius: 8px; margin-top: 1rem;">
+          <strong>💡 Dica:</strong> Sempre consulte o departamento jurídico antes de implementar novas jornadas para garantir total conformidade com a legislação vigente.
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer style="text-align: center; padding: 1.5rem 1rem; background-color: #f8f9fa; border-top: 1px solid #ccc;">
+  <img src="../../LogoSolucao.png" alt="Logo Solução" style="height: 50px; margin-bottom: 0.5rem;">
+  <p style="margin: 0;">&copy; 2025 GesOper - Todos os direitos reservados</p>
+</footer>
+
+  <script src="../../assets/js/navigation.js"></script>
+</body>
+</html>
