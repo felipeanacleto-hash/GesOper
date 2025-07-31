@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financeiro - GesOper</title>
+  <link rel="stylesheet" href="../assets/css/global.css">
+</head>
+<body>
+  <div class="main-wrapper">
+    <nav class="sidebar">
+      <div class="sidebar-header">
+        <h2><a href="../index.html">GesOper</a></h2>
+        <div class="subtitle">Base de Conhecimento</div>
+      </div>
+      
+      <div class="menu-item">
+        <button class="menu-button" data-submenu="submenu-operacional">
+          <span><span class="icon">⚙️</span>Operacional</span>
+          <span class="arrow">▶</span>
+        </button>
+        <div id="submenu-operacional" class="submenu">
+          <a href="../operacional/escala/index.html">📅 Escala</a>
+          <a href="../operacional/cadastro-jornada/index.html">⏰ Cadastro de Jornada</a>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <button class="menu-button active" data-submenu="submenu-financeiro">
+          <span><span class="icon">💰</span>Financeiro</span>
+          <span class="arrow rotated">▶</span>
+        </button>
+        <div id="submenu-financeiro" class="submenu show">
+          <a href="index.html" class="active">📊 Visão Geral</a>
+          <a href="conciliacao-bancaria/index.html">🏦 Conciliação Bancária</a>
+          <a href="lancamento-de-caixa/index.html">💰 Lançamento de Caixa</a>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <button class="menu-button">
+          <a href="../beneficios/index.html" style="color: inherit; text-decoration: none; display: flex; align-items: center; width: 100%;">
+            <span class="icon">🎁</span>Benefícios
+          </a>
+        </button>
+      </div>
+    </nav>
+
+    <main class="content">
+      <div class="topbar">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <h1>Módulo Financeiro</h1>
+           <img src="../assets/img/GesoperFinanceiro.png" alt="Logo Financeiro" style="height: 80px; margin-right: 10px;">
+         </div>
+        <div class="breadcrumb">
+          <a href="../index.html">Início</a> > Financeiro
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h2>💰 Gestão Financeira Completa</h2>
+        <p>O módulo financeiro do GesOper oferece ferramentas abrangentes para o controle e gestão das finanças empresariais, proporcionando visibilidade total sobre a saúde financeira da organização.</p>
+        
+        <h3>Principais Recursos</h3>
+        <ul class="feature-list">
+          <li class="feature-item">
+            <strong>Tesouraria</strong>
+            <small>Lançamento de Caixa, Conciliação bancária, Autorização de Pagamentos, Fechamento e Relatórios.</small>
+          </li>
+          <li class="feature-item">
+            <strong>Controle de Contas a Pagar</strong>
+            <small>Gestão completa de fornecedores, Lançamento e Manutenção de Títulos, Relatórios.</small>
+          </li>
+          <li class="feature-item">
+            <strong>Controle de Contas a Receber</strong>
+            <small>Acompanhamento de clientes, faturas em aberto, recebimentos e relatórios detalhados.</small>
+          </li>
+          <li class="feature-item">
+            <strong>Faturamento</strong>
+            <small>Emissão de Notas Fiscais de Serviço e seus Principais Relatórios.</small>
+          </li>
+       </ul>
+      </div>
+
+      <div class="content-card">
+        <h2>Funcionalidades Disponíveis</h2>
+        
+        <div class="feature-list">
+          <div class="feature-item">
+            <b><a href="conciliacao-bancaria/index.html">🏦 Conciliação Bancária</a></b>
+            <small>
+              Sistema automatizado de conciliação que compara os registros internos com extratos bancários, 
+              identificando divergências e facilitando o fechamento contábil mensal, suporte para múltiplas 
+              contas bancárias e integração com principais bancos brasileiros.
+            </small>
+          </div>
+          
+          <div class="feature-item">
+            <b><a href="lancamento-de-caixa/index.html">📥 Lançamento de Caixa</a></b>
+            <small>
+              Registro financeiro de entradas e saídas em contas bancárias e caixas internos, com
+              integração ao plano de contas. Suporte a lançamentos individuais ou em lote, categorização
+              por tipo de operação e controle por centro de custo, histórico e forma de pagamento.
+            </small>
+          </div>
+                             
+        </div>
+      </div>
+
+      <div class="content-card">
+        <h2>Benefícios do Módulo Financeiro</h2>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; margin-top: 1rem;">
+          <div style="background-color: #f8f9fa; padding: 1rem; border-radius: 8px; border-left: 4px solid #003973;">
+            <h4 style="color: #003973; margin-bottom: 0.5rem;">⚡ Automação</h4>
+            <p style="font-size: 0.9rem; margin: 0;">Reduza tarefas manuais com processos automatizados de conciliação, integração via API bancos e relatórios.</p>
+          </div>
+          
+          <div style="background-color: #f8f9fa; padding: 1rem; border-radius: 8px; border-left: 4px solid #28a745;">
+            <h4 style="color: #28a745; margin-bottom: 0.5rem;">📊 Visibilidade</h4>
+            <p style="font-size: 0.9rem; margin: 0;">Tenha visão completa da situação financeira com relatórios detalhados.</p>
+          </div>
+          
+          <div style="background-color: #f8f9fa; padding: 1rem; border-radius: 8px; border-left: 4px solid #ffc107;">
+            <h4 style="color: #ffc107; margin-bottom: 0.5rem;">🎯 Controle</h4>
+            <p style="font-size: 0.9rem; margin: 0;">Mantenha controle rigoroso sobre receitas, despesas e fluxo de caixa.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <footer style="text-align: center; padding: 1.5rem 1rem; background-color: #f8f9fa; border-top: 1px solid #ccc;">
+   <img src="../LogoSolucao.png" alt="Logo Solução" style="height: 50px; margin-bottom: 0.5rem;">
+   <p style="margin: 0;">&copy; 2025 GesOper - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="../assets/js/navigation.js"></script>
+</body>
+</html>
